@@ -1,0 +1,62 @@
+{
+  "name": "proyecto-reactjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "dev": "webpack-dev-server --mode development --open --hot --content-base",
+    "docs:build": "documentation build ./src --format html -o ./docs",
+    "build": "webpack --mode development",
+    "build:prod": "webpack --mode production"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "LeoVB",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5",
+    "@babel/plugin-transform-runtime": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "documentation": "^14.0.2",
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "prettier": "^2.8.8",
+    "sass-loader": "^13.3.2",
+    "source-map-loader": "^4.0.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bootstrap": "^4.6.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.7",
+    "react-router-dom": "^6.12.1",
+    "redux": "^4.2.1",
+    "redux-saga": "^1.2.3"
+  }
+}
