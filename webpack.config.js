@@ -19,7 +19,6 @@ module.exports = {
   context: path.resolve(__dirname),
   devServer: {
     port,
-    inline: true,
     historyApiFallback: true,
   },
   devtool: 'eval-source-map',
@@ -79,12 +78,15 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.css', '.scss', '.sass'],
     modules: ['node_modules'],
+    alias : {
+      'react-redux' : path.join(__dirname, 'node_modules/react-redux'),
+    },
   },
   optimization: {
     minimize: true,
     minimizer: [
       new TerserPlugin(),
       new CssMinimizerPlugin(),
-    ],
+    ]
   },
 };

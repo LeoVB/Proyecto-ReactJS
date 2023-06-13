@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "dev": "webpack-dev-server --mode development --open --hot --content-base",
+    "deploy:dev": "webpack-dev-server --mode development --hot --open --static",
     "docs:build": "documentation build ./src --format html -o ./docs",
     "build": "webpack --mode development",
-    "build:prod": "webpack --mode production"
+    "build:prod": "webpack --mode production",
+    "deploy:prod": "netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod"
   },
   "keywords": [
     "react"
@@ -39,6 +40,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
+    "netlify-cli": "^15.5.1",
     "node-sass": "^9.0.0",
     "prettier": "^2.8.8",
     "sass-loader": "^13.3.2",
