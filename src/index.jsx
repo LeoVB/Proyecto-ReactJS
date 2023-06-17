@@ -12,9 +12,19 @@ import './styles/css/index.scss';
 
 // TODO: If we work with redux, we create the store and apply middleware here
 
-ReactDOM.render(
+
+import { createRoot } from "react-dom/client";
+
+// ...
+
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+  </React.StrictMode>
 );
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root'),
+// );

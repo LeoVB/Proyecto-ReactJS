@@ -37,6 +37,7 @@
         "indent":0,
         "react/proptypes":0,
         "arrow-body-style":0,
-        "react/function-component-definition": 0
+        "react/function-component-definition": 0,
+        "no-unused-vars":1
     }
 }
